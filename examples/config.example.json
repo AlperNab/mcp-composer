@@ -1,0 +1,28 @@
+{
+  "servers": {
+    "shopify": {
+      "command": "shopify-mcp-server",
+      "env": {
+        "SHOPIFY_STORE_DOMAIN": "your-store.myshopify.com",
+        "SHOPIFY_ACCESS_TOKEN": "shpat_xxx"
+      }
+    },
+    "gmail": {
+      "url": "https://gmail-mcp.example.com/sse",
+      "headers": { "Authorization": "Bearer xxx" }
+    },
+    "notion": {
+      "command": "notion-mcp-server",
+      "env": { "NOTION_TOKEN": "secret_xxx" }
+    },
+    "klaviyo": {
+      "command": "klaviyo-mcp-server",
+      "env": { "KLAVIYO_API_KEY": "pk_xxx" }
+    }
+  },
+  "composer": {
+    "max_parallel": 5,
+    "audit_log": "~/.mcp-composer/audit.jsonl",
+    "dry_run": false
+  }
+}
