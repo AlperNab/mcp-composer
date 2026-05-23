@@ -1,0 +1,28 @@
+{
+  "name": "mcp-composer",
+  "version": "0.1.0",
+  "description": "Orchestrate multiple MCP servers together — chain Shopify, Gmail, Notion, Klaviyo in one workflow",
+  "main": "dist/index.js",
+  "bin": { "mcp-composer": "dist/index.js" },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["mcp","model-context-protocol","orchestration","claude","anthropic","ai","automation","shopify","gmail","notion"],
+  "author": "Alper Nabil Gabra Zakher <contact@alpernabil.com> (https://alpernabil.com)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/AlperNab/mcp-composer.git" },
+  "homepage": "https://github.com/AlperNab/mcp-composer#readme",
+  "engines": { "node": ">=18.0.0" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
